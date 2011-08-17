@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A899235F13FC4FD8006F16EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A899235E13FC4FD8006F16EB /* UIKit.framework */; };
+		A899236113FC4FD8006F16EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A899236013FC4FD8006F16EB /* Foundation.framework */; };
+		A899236313FC4FD8006F16EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A899236213FC4FD8006F16EB /* CoreGraphics.framework */; };
+		A899236913FC4FD8006F16EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A899236713FC4FD8006F16EB /* InfoPlist.strings */; };
+		A899236B13FC4FD8006F16EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A899236A13FC4FD8006F16EB /* main.m */; };
+		A899236F13FC4FD8006F16EB /* YogaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A899236E13FC4FD8006F16EB /* YogaAppDelegate.m */; };
+		A899237313FC4FD8006F16EB /* YogaAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = A899237213FC4FD8006F16EB /* YogaAppDelegate_iPhone.m */; };
+		A899237613FC4FD8006F16EB /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A899237413FC4FD8006F16EB /* MainWindow_iPhone.xib */; };
+		A899237A13FC4FD8006F16EB /* YogaAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = A899237913FC4FD8006F16EB /* YogaAppDelegate_iPad.m */; };
+		A899237D13FC4FD8006F16EB /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A899237B13FC4FD8006F16EB /* MainWindow_iPad.xib */; };
+		A899238513FC4FD8006F16EB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A899238413FC4FD8006F16EB /* SenTestingKit.framework */; };
+		A899238613FC4FD8006F16EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A899235E13FC4FD8006F16EB /* UIKit.framework */; };
+		A899238713FC4FD8006F16EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A899236013FC4FD8006F16EB /* Foundation.framework */; };
+		A899238813FC4FD8006F16EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A899236213FC4FD8006F16EB /* CoreGraphics.framework */; };
+		A899239013FC4FD8006F16EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A899238E13FC4FD8006F16EB /* InfoPlist.strings */; };
+		A899239213FC4FD9006F16EB /* YogaTests.h in Resources */ = {isa = PBXBuildFile; fileRef = A899239113FC4FD9006F16EB /* YogaTests.h */; };
+		A899239413FC4FD9006F16EB /* YogaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A899239313FC4FD9006F16EB /* YogaTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A899238913FC4FD8006F16EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A899235113FC4FD8006F16EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A899235913FC4FD8006F16EB;
+			remoteInfo = Yoga;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A899235A13FC4FD8006F16EB /* Yoga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yoga.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A899235E13FC4FD8006F16EB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A899236013FC4FD8006F16EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A899236213FC4FD8006F16EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A899236613FC4FD8006F16EB /* Yoga-Info.plist */ = {isa = PBXFileReference; path = "Yoga-Info.plist"; sourceTree = "<group>"; };
+		A899236813FC4FD8006F16EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A899236A13FC4FD8006F16EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A899236C13FC4FD8006F16EB /* Yoga-Prefix.pch */ = {isa = PBXFileReference; path = "Yoga-Prefix.pch"; sourceTree = "<group>"; };
+		A899236D13FC4FD8006F16EB /* YogaAppDelegate.h */ = {isa = PBXFileReference; path = YogaAppDelegate.h; sourceTree = "<group>"; };
+		A899236E13FC4FD8006F16EB /* YogaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YogaAppDelegate.m; sourceTree = "<group>"; };
+		A899237113FC4FD8006F16EB /* YogaAppDelegate_iPhone.h */ = {isa = PBXFileReference; name = YogaAppDelegate_iPhone.h; path = iPhone/YogaAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		A899237213FC4FD8006F16EB /* YogaAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = YogaAppDelegate_iPhone.m; path = iPhone/YogaAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		A899237513FC4FD8006F16EB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		A899237813FC4FD8006F16EB /* YogaAppDelegate_iPad.h */ = {isa = PBXFileReference; name = YogaAppDelegate_iPad.h; path = iPad/YogaAppDelegate_iPad.h; sourceTree = "<group>"; };
+		A899237913FC4FD8006F16EB /* YogaAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = YogaAppDelegate_iPad.m; path = iPad/YogaAppDelegate_iPad.m; sourceTree = "<group>"; };
+		A899237C13FC4FD8006F16EB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		A899238313FC4FD8006F16EB /* YogaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YogaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A899238413FC4FD8006F16EB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A899238D13FC4FD8006F16EB /* YogaTests-Info.plist */ = {isa = PBXFileReference; path = "YogaTests-Info.plist"; sourceTree = "<group>"; };
+		A899238F13FC4FD8006F16EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A899239113FC4FD9006F16EB /* YogaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YogaTests.h; sourceTree = "<group>"; };
+		A899239313FC4FD9006F16EB /* YogaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YogaTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A899235713FC4FD8006F16EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A899235F13FC4FD8006F16EB /* UIKit.framework in Frameworks */,
+				A899236113FC4FD8006F16EB /* Foundation.framework in Frameworks */,
+				A899236313FC4FD8006F16EB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A899237F13FC4FD8006F16EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A899238513FC4FD8006F16EB /* SenTestingKit.framework in Frameworks */,
+				A899238613FC4FD8006F16EB /* UIKit.framework in Frameworks */,
+				A899238713FC4FD8006F16EB /* Foundation.framework in Frameworks */,
+				A899238813FC4FD8006F16EB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A899234F13FC4FD8006F16EB = {
+			isa = PBXGroup;
+			children = (
+				A899236413FC4FD8006F16EB /* Yoga */,
+				A899238B13FC4FD8006F16EB /* YogaTests */,
+				A899235D13FC4FD8006F16EB /* Frameworks */,
+				A899235B13FC4FD8006F16EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A899235B13FC4FD8006F16EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A899235A13FC4FD8006F16EB /* Yoga.app */,
+				A899238313FC4FD8006F16EB /* YogaTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A899235D13FC4FD8006F16EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A899235E13FC4FD8006F16EB /* UIKit.framework */,
+				A899236013FC4FD8006F16EB /* Foundation.framework */,
+				A899236213FC4FD8006F16EB /* CoreGraphics.framework */,
+				A899238413FC4FD8006F16EB /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A899236413FC4FD8006F16EB /* Yoga */ = {
+			isa = PBXGroup;
+			children = (
+				A899236D13FC4FD8006F16EB /* YogaAppDelegate.h */,
+				A899236E13FC4FD8006F16EB /* YogaAppDelegate.m */,
+				A899237013FC4FD8006F16EB /* iPhone */,
+				A899237713FC4FD8006F16EB /* iPad */,
+				A899236513FC4FD8006F16EB /* Supporting Files */,
+			);
+			path = Yoga;
+			sourceTree = "<group>";
+		};
+		A899236513FC4FD8006F16EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A899236613FC4FD8006F16EB /* Yoga-Info.plist */,
+				A899236713FC4FD8006F16EB /* InfoPlist.strings */,
+				A899236A13FC4FD8006F16EB /* main.m */,
+				A899236C13FC4FD8006F16EB /* Yoga-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A899237013FC4FD8006F16EB /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				A899237113FC4FD8006F16EB /* YogaAppDelegate_iPhone.h */,
+				A899237213FC4FD8006F16EB /* YogaAppDelegate_iPhone.m */,
+				A899237413FC4FD8006F16EB /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		A899237713FC4FD8006F16EB /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				A899237813FC4FD8006F16EB /* YogaAppDelegate_iPad.h */,
+				A899237913FC4FD8006F16EB /* YogaAppDelegate_iPad.m */,
+				A899237B13FC4FD8006F16EB /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		A899238B13FC4FD8006F16EB /* YogaTests */ = {
+			isa = PBXGroup;
+			children = (
+				A899239113FC4FD9006F16EB /* YogaTests.h */,
+				A899239313FC4FD9006F16EB /* YogaTests.m */,
+				A899238C13FC4FD8006F16EB /* Supporting Files */,
+			);
+			path = YogaTests;
+			sourceTree = "<group>";
+		};
+		A899238C13FC4FD8006F16EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A899238D13FC4FD8006F16EB /* YogaTests-Info.plist */,
+				A899238E13FC4FD8006F16EB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A899235913FC4FD8006F16EB /* Yoga */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A899239713FC4FD9006F16EB /* Build configuration list for PBXNativeTarget "Yoga" */;
+			buildPhases = (
+				A899235613FC4FD8006F16EB /* Sources */,
+				A899235713FC4FD8006F16EB /* Frameworks */,
+				A899235813FC4FD8006F16EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yoga;
+			productName = Yoga;
+			productReference = A899235A13FC4FD8006F16EB /* Yoga.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A899238213FC4FD8006F16EB /* YogaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A899239A13FC4FD9006F16EB /* Build configuration list for PBXNativeTarget "YogaTests" */;
+			buildPhases = (
+				A899237E13FC4FD8006F16EB /* Sources */,
+				A899237F13FC4FD8006F16EB /* Frameworks */,
+				A899238013FC4FD8006F16EB /* Resources */,
+				A899238113FC4FD8006F16EB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A899238A13FC4FD8006F16EB /* PBXTargetDependency */,
+			);
+			name = YogaTests;
+			productName = YogaTests;
+			productReference = A899238313FC4FD8006F16EB /* YogaTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A899235113FC4FD8006F16EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Depixelate;
+			};
+			buildConfigurationList = A899235413FC4FD8006F16EB /* Build configuration list for PBXProject "Yoga" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A899234F13FC4FD8006F16EB;
+			productRefGroup = A899235B13FC4FD8006F16EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A899235913FC4FD8006F16EB /* Yoga */,
+				A899238213FC4FD8006F16EB /* YogaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A899235813FC4FD8006F16EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A899236913FC4FD8006F16EB /* InfoPlist.strings in Resources */,
+				A899237613FC4FD8006F16EB /* MainWindow_iPhone.xib in Resources */,
+				A899237D13FC4FD8006F16EB /* MainWindow_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A899238013FC4FD8006F16EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A899239013FC4FD8006F16EB /* InfoPlist.strings in Resources */,
+				A899239213FC4FD9006F16EB /* YogaTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A899238113FC4FD8006F16EB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A899235613FC4FD8006F16EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A899236B13FC4FD8006F16EB /* main.m in Sources */,
+				A899236F13FC4FD8006F16EB /* YogaAppDelegate.m in Sources */,
+				A899237313FC4FD8006F16EB /* YogaAppDelegate_iPhone.m in Sources */,
+				A899237A13FC4FD8006F16EB /* YogaAppDelegate_iPad.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A899237E13FC4FD8006F16EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A899239413FC4FD9006F16EB /* YogaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A899238A13FC4FD8006F16EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A899235913FC4FD8006F16EB /* Yoga */;
+			targetProxy = A899238913FC4FD8006F16EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A899236713FC4FD8006F16EB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A899236813FC4FD8006F16EB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A899237413FC4FD8006F16EB /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A899237513FC4FD8006F16EB /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		A899237B13FC4FD8006F16EB /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A899237C13FC4FD8006F16EB /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+		A899238E13FC4FD8006F16EB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A899238F13FC4FD8006F16EB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A899239513FC4FD9006F16EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A899239613FC4FD9006F16EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A899239813FC4FD9006F16EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Yoga/Yoga-Prefix.pch";
+				INFOPLIST_FILE = "Yoga/Yoga-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A899239913FC4FD9006F16EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Yoga/Yoga-Prefix.pch";
+				INFOPLIST_FILE = "Yoga/Yoga-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A899239B13FC4FD9006F16EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Yoga.app/Yoga";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Yoga/Yoga-Prefix.pch";
+				INFOPLIST_FILE = "YogaTests/YogaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A899239C13FC4FD9006F16EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Yoga.app/Yoga";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Yoga/Yoga-Prefix.pch";
+				INFOPLIST_FILE = "YogaTests/YogaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A899235413FC4FD8006F16EB /* Build configuration list for PBXProject "Yoga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A899239513FC4FD9006F16EB /* Debug */,
+				A899239613FC4FD9006F16EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A899239713FC4FD9006F16EB /* Build configuration list for PBXNativeTarget "Yoga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A899239813FC4FD9006F16EB /* Debug */,
+				A899239913FC4FD9006F16EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A899239A13FC4FD9006F16EB /* Build configuration list for PBXNativeTarget "YogaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A899239B13FC4FD9006F16EB /* Debug */,
+				A899239C13FC4FD9006F16EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A899235113FC4FD8006F16EB /* Project object */;
+}
