@@ -1,32 +1,27 @@
-//
-//  YogaTests.m
-//  YogaTests
-//
-//  Created by Zackary Chandler on 8/17/11.
-//  Copyright 2011 Depixelate. All rights reserved.
-//
-
 #import "YogaTests.h"
+
+static NSString * const kPathToClassesXML = @"/Users/zackchandler/dev/Yoga/YogaTests/query_classes_result.xml";
+
+@interface YogaTests()
+
+- (NSData *)classesXMLData;
+
+@end
 
 @implementation YogaTests
 
-- (void)setUp
-{
-    [super setUp];
+- (void)testParsingClassesXML {
+    MindBodyParser *parser = [[MindBodyParser alloc] init];
+
+    NSArray *klasses = [parser parseClassesXML:[self classesXMLData]];
     
-    // Set-up code here.
+//    NSLog(@"classes: %@", klasses);
+    
+    [parser release];
 }
 
-- (void)tearDown
-{
-    // Tear-down code here.
-    
-    [super tearDown];
-}
-
-- (void)testExample
-{
-    STFail(@"Unit tests are not implemented yet in YogaTests");
+- (NSData *)classesXMLData {
+    return [NSData dataWithContentsOfFile:kPathToClassesXML];
 }
 
 @end
