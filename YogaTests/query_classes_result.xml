@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <GetClassesWithinRadiusResponse xmlns="http://clients.mindbodyonline.com/api/0_5">
+      <GetClassesWithinRadiusResult>
+        <Status>Success</Status>
+        <XMLDetail>Bare</XMLDetail>
+        <ResultCount>18</ResultCount>
+        <CurrentPageIndex>0</CurrentPageIndex>
+        <TotalPageCount>1</TotalPageCount>
+        <FinderClasses>
+          <FinderClass>
+            <Organization>
+              <ID>4</ID>
+              <Name>yogaworks</Name>
+            </Organization>
+            <Site>
+              <ID>-141</ID>
+              <Name>YogaWorks - Nor Cal</Name>
+              <LogoURL>http://clients.mindbodyonline.com/studios/YogaStudioSQL/logo_mobile.png</LogoURL>
+            </Site>
+            <SessionType>
+              <ID>0</ID>
+              <Name>0</Name>
+              <Length>0</Length>
+            </SessionType>
+            <Price xsi:nil="true"/>
+            <Bookable>false</Bookable>
+            <MBFClassID>463835</MBFClassID>
+            <GUID>0234ee66-4f11-43d3-9ef1-aee67fca120a</GUID>
+            <ClassID>2109398293</ClassID>
+            <ClassName>Yoga Blend (1/2) &amp;#9835;</ClassName>
+            <StartDateTime>2011-08-17T06:00:00</StartDateTime>
+            <EndDateTime>2011-08-17T07:00:00</EndDateTime>
+            <Staff>
+              <ID>100000454</ID>
+              <Name>Sonia Roberts</Name>
+              <isMale>false</isMale>
+            </Staff>
+          </FinderClass>
+          <FinderClass>
+            <Organization>
+              <ID>4</ID>
+              <Name>yogaworks</Name>
+            </Organization>
+            <Site>
+              <ID>-141</ID>
+              <Name>YogaWorks - Nor Cal</Name>
+              <LogoURL>http://clients.mindbodyonline.com/studios/YogaStudioSQL/logo_mobile.png</LogoURL>
+            </Site>
+            <SessionType>
+              <ID>0</ID>
+              <Name>0</Name>
+              <Length>0</Length>
+            </SessionType>
+            <Price xsi:nil="true"/>
+            <Bookable>false</Bookable>
+            <MBFClassID>463864</MBFClassID>
+            <GUID>f27d642d-58a9-41e9-a261-4d9bd6a6521a</GUID>
+            <ClassID>2109398612</ClassID>
+            <ClassName>Vinyasa Flow (2) &amp;#9733;</ClassName>
+            <StartDateTime>2011-08-17T07:00:00</StartDateTime>
+            <EndDateTime>2011-08-17T08:00:00</EndDateTime>
+            <Staff>
+              <ID>100000593</ID>
+              <Name>Ali Letsch</Name>
+              <isMale>false</isMale>
+            </Staff>
+          </FinderClass>
+          <FinderClass>
+            <Organization>
+              <ID>4</ID>
+              <Name>yogaworks</Name>
+            </Organization>
+            <Site>
+              <ID>-141</ID>
+              <Name>YogaWorks - Nor Cal</Name>
+              <LogoURL>http://clients.mindbodyonline.com/studios/YogaStudioSQL/logo_mobile.png</LogoURL>
+            </Site>
+            <SessionType>
+              <ID>0</ID>
+              <Name>0</Name>
+              <Length>0</Length>
+            </SessionType>
+            <Price xsi:nil="true"/>
+            <Bookable>false</Bookable>
+            <MBFClassID>463852</MBFClassID>
+            <GUID>1048615e-7ca6-4465-834b-5c042fadd663</GUID>
+            <ClassID>2109398467</ClassID>
+            <ClassName>Yoga Blend (1) &amp;#9733;</ClassName>
+            <StartDateTime>2011-08-17T08:30:00</StartDateTime>
+            <EndDateTime>2011-08-17T09:45:00</EndDateTime>
+            <Staff>
+              <ID>100000392</ID>
+              <Name>Wesley Linch</Name>
+              <isMale>true</isMale>
+            </Staff>
+          </FinderClass>
+          <FinderClass>
+            <Organization>
+              <ID>4</ID>
+              <Name>yogaworks</Name>
+            </Organization>
+            <Site>
+              <ID>-141</ID>
+              <Name>YogaWorks - Nor Cal</Name>
+              <LogoURL>http://clients.mindbodyonline.com/studios/YogaStudioSQL/logo_mobile.png</LogoURL>
+            </Site>
+            <SessionType>
+              <ID>0</ID>
+              <Name>0</Name>
+              <Length>0</Length>
+            </SessionType>
+            <Price xsi:nil="true"/>
+            <Bookable>false</Bookable>
+            <MBFClassID>463849</MBFClassID>
+            <GUID>3eb19737-5ffc-4541-ba3e-23e003ee500c</GUID>
+            <ClassID>2109398468</ClassID>
+            <ClassName>YW Flow (2/3)</ClassName>
+            <StartDateTime>2011-08-17T08:45:00</StartDateTime>
+            <EndDateTime>2011-08-17T10:00:00</EndDateTime>
+            <Staff>
+              <ID>100000423</ID>
+              <Name>Angie Norwood</Name>
+              <isMale>false</isMale>
+            </Staff>
+          </FinderClass>
+          <FinderClass>
+            <Organization>
+              <ID>4</ID>
+              <Name>yogaworks</Name>
+            </Organization>
+            <Site>
+              <ID>-141</ID>
+              <Name>YogaWorks - Nor Cal</Name>
+              <LogoURL>http://clients.mindbodyonline.com/studios/YogaStudioSQL/logo_mobile.png</LogoURL>
+            </Site>
+            <SessionType>
+              <ID>0</ID>
+              <Name>0</Name>
+              <Length>0</Length>
+            </SessionType>
+            <Price xsi:nil="true"/>
+            <Bookable>false</Bookable>
+            <MBFClassID>463848</MBFClassID>
+            <GUID>46089986-02f8-4971-b956-2821363b22ea</GUID>
+            <ClassID>2109398294</ClassID>
+            <ClassName>SculptWorks (1/2) &amp;#9835;</ClassName>
+            <StartDateTime>2011-08-17T09:15:00</StartDateTime>
+            <EndDateTime>2011-08-17T10:10:00</EndDateTime>
+            <Staff>
+              <ID>100000599</ID>
+              <Name>VJ (Valerie) Jones</Name>
+              <isMale>false</isMale>
+            </Staff>
+          </FinderClass>
+          <FinderClass>
+            <Organization>
+              <ID>4</ID>
+              <Name>yogaworks</Name>
+            </Organization>
+            <Site>
+              <ID>-141</ID>
+              <Name>YogaWorks - Nor Cal</Name>
+              <LogoURL>http://clients.mindbodyonline.com/studios/YogaStudioSQL/logo_mobile.png</LogoURL>
+            </Site>
+            <SessionType>
+              <ID>0</ID>
+              <Name>0</Name>
+              <Length>0</Length>
+            </SessionType>
+            <Price xsi:nil="true"/>
+            <Bookable>false</Bookable>
+            <MBFClassID>463846</MBFClassID>
+            <GUID>b3e7eb56-5d63-4c36-b353-0b504dafd74c</GUID>
+            <ClassID>2109398386</ClassID>
+            <ClassName>Beginning Reformer / Group (Pre-Reg Req)</ClassName>
+            <StartDateTime>2011-08-17T10:00:00</StartDateTime>
+            <EndDateTime>2011-08-17T10:55:00</EndDateTime>
+            <Staff>
+              <ID>100000609</ID>
+              <Name>Lala Darrah</Name>
+              <isMale>false</isMale>
+            </Staff>
+          </FinderClass>
+          <FinderClass>
+            <Organization>
+              <ID>4</ID>
+              <Name>yogaworks</Name>
+            </Organization>
+            <Site>
+              <ID>-141</ID>
+              <Name>YogaWorks - Nor Cal</Name>
+              <LogoURL>http://clients.mindbodyonline.com/studios/YogaStudioSQL/logo_mobile.png</LogoURL>
+            </Site>
+            <SessionType>
+              <ID>0</ID>
+              <Name>0</Name>
+              <Length>0</Length>
+            </SessionType>
+            <Price xsi:nil="true"/>
+            <Bookable>false</Bookable>
+            <MBFClassID>463836</MBFClassID>
+            <GUID>dce756d2-6d5d-4d6f-9c51-59ea58fcbd0c</GUID>
+            <ClassID>2109397734</ClassID>
+            <ClassName>YogaWorks (1/2)</ClassName>
+            <StartDateTime>2011-08-17T10:15:00</StartDateTime>
+            <EndDateTime>2011-08-17T11:45:00</EndDateTime>
+            <Staff>
+              <ID>100000403</ID>
+              <Name>Mynx Inatsugu</Name>
+              <isMale>false</isMale>
+            </Staff>
+          </FinderClass>
+          <FinderClass>
+            <Organization>
+              <ID>4</ID>
+              <Name>yogaworks</Name>
+            </Organization>
+            <Site>
+              <ID>-141</ID>
+              <Name>YogaWorks - Nor Cal</Name>
+              <LogoURL>http://clients.mindbodyonline.com/studios/YogaStudioSQL/logo_mobile.png</LogoURL>
+            </Site>
+            <SessionType>
+              <ID>0</ID>
+              <Name>0</Name>
+              <Length>0</Length>
+            </SessionType>
+            <Price xsi:nil="true"/>
+            <Bookable>false</Bookable>
+            <MBFClassID>463837</MBFClassID>
+            <GUID>604bbb44-d04f-4809-9a80-982ce7364362</GUID>
+            <ClassID>2109398295</ClassID>
+            <ClassName>Vinyasa Flow (2/3) &amp;#9835;</ClassName>
+            <StartDateTime>2011-08-17T12:15:00</StartDateTime>
+            <EndDateTime>2011-08-17T13:15:00</EndDateTime>
+            <Staff>
+              <ID>100000682</ID>
+              <Name>Julie Conrad</Name>
+              <isMale>false</isMale>
+            </Staff>
+          </FinderClass>
+          <FinderClass>
+            <Organization>
+              <ID>4</ID>
+              <Name>yogaworks</Name>
+            </Organization>
+            <Site>
+              <ID>-141</ID>
+              <Name>YogaWorks - Nor Cal</Name>
+              <LogoURL>http://clients.mindbodyonline.com/studios/YogaStudioSQL/logo_mobile.png</LogoURL>
+            </Site>
+            <SessionType>
+              <ID>0</ID>
+              <Name>0</Name>
+              <Length>0</Length>
+            </SessionType>
+            <Price xsi:nil="true"/>
+            <Bookable>false</Bookable>
+            <MBFClassID>463838</MBFClassID>
+            <GUID>a700b844-6562-4bf2-86c8-53a3d7cddc48</GUID>
+            <ClassID>2109398296</ClassID>
+            <ClassName>Yoga Blend (1/2) &amp;#9835;</ClassName>
+            <StartDateTime>2011-08-17T13:30:00</StartDateTime>
+            <EndDateTime>2011-08-17T14:30:00</EndDateTime>
+            <Staff>
+              <ID>100000458</ID>
+              <Name>Sarah Pascual</Name>
+              <isMale>false</isMale>
+            </Staff>
+          </FinderClass>
+          <FinderClass>
+            <Organization>
+              <ID>4</ID>
+              <Name>yogaworks</Name>
+            </Organization>
+            <Site>
+              <ID>-141</ID>
+              <Name>YogaWorks - Nor Cal</Name>
+              <LogoURL>http://clients.mindbodyonline.com/studios/YogaStudioSQL/logo_mobile.png</LogoURL>
+            </Site>
+            <SessionType>
+              <ID>0</ID>
+              <Name>0</Name>
+              <Length>0</Length>
+            </SessionType>
+            <Price xsi:nil="true"/>
+            <Bookable>false</Bookable>
+            <MBFClassID>463865</MBFClassID>
+            <GUID>be2df746-1bc3-44fd-85a5-cc6023fbb1ee</GUID>
+            <ClassID>2109398644</ClassID>
+            <ClassName>Intermediate Reformer / Group (Pre-Reg Req)</ClassName>
+            <StartDateTime>2011-08-17T16:00:00</StartDateTime>
+            <EndDateTime>2011-08-17T16:55:00</EndDateTime>
+            <Staff>
+              <ID>100000552</ID>
+              <Name>Ivy Noceto</Name>
+              <isMale>false</isMale>
+            </Staff>
+          </FinderClass>
+          <FinderClass>
+            <Organization>
+              <ID>4</ID>
+              <Name>yogaworks</Name>
+            </Organization>
+            <Site>
+              <ID>-141</ID>
+              <Name>YogaWorks - Nor Cal</Name>
+              <LogoURL>http://clients.mindbodyonline.com/studios/YogaStudioSQL/logo_mobile.png</LogoURL>
+            </Site>
+            <SessionType>
+              <ID>0</ID>
+              <Name>0</Name>
+              <Length>0</Length>
+            </SessionType>
+            <Price xsi:nil="true"/>
+            <Bookable>false</Bookable>
+            <MBFClassID>463850</MBFClassID>
+            <GUID>a8cfb624-d544-46b9-886b-20548d21d1f7</GUID>
+            <ClassID>2109398469</ClassID>
+            <ClassName>Viniyoga (1/2)</ClassName>
+            <StartDateTime>2011-08-17T16:30:00</StartDateTime>
+            <EndDateTime>2011-08-17T17:45:00</EndDateTime>
+            <Staff>
+              <ID>100000403</ID>
+              <Name>Mynx Inatsugu</Name>
+              <isMale>false</isMale>
+            </Staff>
+          </FinderClass>
+          <FinderClass>
+            <Organization>
+              <ID>4</ID>
+              <Name>yogaworks</Name>
+            </Organization>
+            <Site>
+              <ID>-141</ID>
+              <Name>YogaWorks - Nor Cal</Name>
+              <LogoURL>http://clients.mindbodyonline.com/studios/YogaStudioSQL/logo_mobile.png</LogoURL>
+            </Site>
+            <SessionType>
+              <ID>0</ID>
+              <Name>0</Name>
+              <Length>0</Length>
+            </SessionType>
+            <Price xsi:nil="true"/>
+            <Bookable>false</Bookable>
+            <MBFClassID>463839</MBFClassID>
+            <GUID>f9e1d407-c52b-40f9-8b9a-5b7b1cc11b4a</GUID>
+            <ClassID>2109397738</ClassID>
+            <ClassName>BarWorks (1/2)</ClassName>
+            <StartDateTime>2011-08-17T17:00:00</StartDateTime>
+            <EndDateTime>2011-08-17T17:55:00</EndDateTime>
+            <Staff>
+              <ID>100000469</ID>
+              <Name>Angela Evans</Name>
+              <isMale>false</isMale>
+            </Staff>
+          </FinderClass>
+          <FinderClass>
+            <Organization>
+              <ID>4</ID>
+              <Name>yogaworks</Name>
+            </Organization>
+            <Site>
+              <ID>-141</ID>
+              <Name>YogaWorks - Nor Cal</Name>
+              <LogoURL>http://clients.mindbodyonline.com/studios/YogaStudioSQL/logo_mobile.png</LogoURL>
+            </Site>
+            <SessionType>
+              <ID>0</ID>
+              <Name>0</Name>
+              <Length>0</Length>
+            </SessionType>
+            <Price xsi:nil="true"/>
+            <Bookable>false</Bookable>
+            <MBFClassID>463840</MBFClassID>
+            <GUID>468fcc15-f1ff-4a60-b654-5bbafbbfa73e</GUID>
+            <ClassID>2109398041</ClassID>
+            <ClassName>Classical Pilates Mat (1/2)</ClassName>
+            <StartDateTime>2011-08-17T18:00:00</StartDateTime>
+            <EndDateTime>2011-08-17T19:00:00</EndDateTime>
+            <Staff>
+              <ID>100000469</ID>
+              <Name>Angela Evans</Name>
+              <isMale>false</isMale>
+            </Staff>
+          </FinderClass>
+          <FinderClass>
+            <Organization>
+              <ID>4</ID>
+              <Name>yogaworks</Name>
+            </Organization>
+            <Site>
+              <ID>-141</ID>
+              <Name>YogaWorks - Nor Cal</Name>
+              <LogoURL>http://clients.mindbodyonline.com/studios/YogaStudioSQL/logo_mobile.png</LogoURL>
+            </Site>
+            <SessionType>
+              <ID>0</ID>
+              <Name>0</Name>
+              <Length>0</Length>
+            </SessionType>
+            <Price xsi:nil="true"/>
+            <Bookable>false</Bookable>
+            <MBFClassID>463841</MBFClassID>
+            <GUID>f6171aab-6e4e-4c33-bf1e-b34b0a037a4e</GUID>
+            <ClassID>2109398297</ClassID>
+            <ClassName>Vinyasa Flow (2/3) &amp;#9835;</ClassName>
+            <StartDateTime>2011-08-17T18:00:00</StartDateTime>
+            <EndDateTime>2011-08-17T19:25:00</EndDateTime>
+            <Staff>
+              <ID>100000423</ID>
+              <Name>Angie Norwood</Name>
+              <isMale>false</isMale>
+            </Staff>
+          </FinderClass>
+          <FinderClass>
+            <Organization>
+              <ID>4</ID>
+              <Name>yogaworks</Name>
+            </Organization>
+            <Site>
+              <ID>-141</ID>
+              <Name>YogaWorks - Nor Cal</Name>
+              <LogoURL>http://clients.mindbodyonline.com/studios/YogaStudioSQL/logo_mobile.png</LogoURL>
+            </Site>
+            <SessionType>
+              <ID>0</ID>
+              <Name>0</Name>
+              <Length>0</Length>
+            </SessionType>
+            <Price xsi:nil="true"/>
+            <Bookable>false</Bookable>
+            <MBFClassID>463842</MBFClassID>
+            <GUID>d78016ae-1c9e-436a-a3fa-698fbe587d1d</GUID>
+            <ClassID>2109397741</ClassID>
+            <ClassName>Yoga Blend (1/2)</ClassName>
+            <StartDateTime>2011-08-17T18:15:00</StartDateTime>
+            <EndDateTime>2011-08-17T19:30:00</EndDateTime>
+            <Staff>
+              <ID>100000454</ID>
+              <Name>Sonia Roberts</Name>
+              <isMale>false</isMale>
+            </Staff>
+          </FinderClass>
+          <FinderClass>
+            <Organization>
+              <ID>4</ID>
+              <Name>yogaworks</Name>
+            </Organization>
+            <Site>
+              <ID>-141</ID>
+              <Name>YogaWorks - Nor Cal</Name>
+              <LogoURL>http://clients.mindbodyonline.com/studios/YogaStudioSQL/logo_mobile.png</LogoURL>
+            </Site>
+            <SessionType>
+              <ID>0</ID>
+              <Name>0</Name>
+              <Length>0</Length>
+            </SessionType>
+            <Price xsi:nil="true"/>
+            <Bookable>false</Bookable>
+            <MBFClassID>463843</MBFClassID>
+            <GUID>70fa6596-c071-4920-8d5c-da9852c61f5c</GUID>
+            <ClassID>2109398470</ClassID>
+            <ClassName>SculptWorks (2) &amp;#9835;</ClassName>
+            <StartDateTime>2011-08-17T19:30:00</StartDateTime>
+            <EndDateTime>2011-08-17T20:25:00</EndDateTime>
+            <Staff>
+              <ID>100000593</ID>
+              <Name>Ali Letsch</Name>
+              <isMale>false</isMale>
+            </Staff>
+          </FinderClass>
+          <FinderClass>
+            <Organization>
+              <ID>4</ID>
+              <Name>yogaworks</Name>
+            </Organization>
+            <Site>
+              <ID>-141</ID>
+              <Name>YogaWorks - Nor Cal</Name>
+              <LogoURL>http://clients.mindbodyonline.com/studios/YogaStudioSQL/logo_mobile.png</LogoURL>
+            </Site>
+            <SessionType>
+              <ID>0</ID>
+              <Name>0</Name>
+              <Length>0</Length>
+            </SessionType>
+            <Price xsi:nil="true"/>
+            <Bookable>false</Bookable>
+            <MBFClassID>463844</MBFClassID>
+            <GUID>a0b3f405-c65a-4ed8-b632-c0bc0ae99ae5</GUID>
+            <ClassID>2109398471</ClassID>
+            <ClassName>Vinyasa Flow (2) &amp;#9835;</ClassName>
+            <StartDateTime>2011-08-17T19:30:00</StartDateTime>
+            <EndDateTime>2011-08-17T20:45:00</EndDateTime>
+            <Staff>
+              <ID>100000463</ID>
+              <Name>Otto Dittmer</Name>
+              <isMale>true</isMale>
+            </Staff>
+          </FinderClass>
+          <FinderClass>
+            <Organization>
+              <ID>4</ID>
+              <Name>yogaworks</Name>
+            </Organization>
+            <Site>
+              <ID>-141</ID>
+              <Name>YogaWorks - Nor Cal</Name>
+              <LogoURL>http://clients.mindbodyonline.com/studios/YogaStudioSQL/logo_mobile.png</LogoURL>
+            </Site>
+            <SessionType>
+              <ID>0</ID>
+              <Name>0</Name>
+              <Length>0</Length>
+            </SessionType>
+            <Price xsi:nil="true"/>
+            <Bookable>false</Bookable>
+            <MBFClassID>463845</MBFClassID>
+            <GUID>092e59dd-f4db-42f2-a492-b4f45463142e</GUID>
+            <ClassID>2109398043</ClassID>
+            <ClassName>Yoga Blend (1)</ClassName>
+            <StartDateTime>2011-08-17T20:00:00</StartDateTime>
+            <EndDateTime>2011-08-17T21:00:00</EndDateTime>
+            <Staff>
+              <ID>100000459</ID>
+              <Name>Valerie Aksoy</Name>
+              <isMale>false</isMale>
+            </Staff>
+          </FinderClass>
+        </FinderClasses>
+      </GetClassesWithinRadiusResult>
+    </GetClassesWithinRadiusResponse>
+  </soap:Body>
+</soap:Envelope>
