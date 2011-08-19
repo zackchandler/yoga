@@ -1,15 +1,12 @@
-//
-//  YogaAppDelegate.h
-//  Yoga
-//
-//  Created by Zackary Chandler on 8/17/11.
-//  Copyright 2011 Depixelate. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
-@interface YogaAppDelegate : NSObject <UIApplicationDelegate>
+#import "ClassesController.h"
+
+@interface YogaAppDelegate : NSObject <UIApplicationDelegate> {
+    ClassesController *classesController;
+}
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) ClassesController *classesController;
 
 @end

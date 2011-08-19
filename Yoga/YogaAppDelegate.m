@@ -1,21 +1,20 @@
-//
-//  YogaAppDelegate.m
-//  Yoga
-//
-//  Created by Zackary Chandler on 8/17/11.
-//  Copyright 2011 Depixelate. All rights reserved.
-//
-
 #import "YogaAppDelegate.h"
 
 @implementation YogaAppDelegate
 
 @synthesize window = _window;
+@synthesize classesController;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    ClassesController *aKlassesController = [[ClassesController alloc] initWithStyle:UITableViewStylePlain];
+	self.classesController = aKlassesController;
+    [aKlassesController release];
+    
+	[self.window addSubview:self.classesController.view];
+    
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
@@ -58,9 +57,10 @@
      */
 }
 
-- (void)dealloc
-{
+- (void)dealloc {
     [_window release];
+    [classesController release];
+    
     [super dealloc];
 }
 

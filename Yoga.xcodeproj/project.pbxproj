@@ -29,6 +29,8 @@
 		A89923A913FC76FD006F16EB /* query_classes_result.xml in Resources */ = {isa = PBXBuildFile; fileRef = A89923A813FC76FD006F16EB /* query_classes_result.xml */; };
 		A89923AC13FC773E006F16EB /* MindBodyParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A89923AB13FC773E006F16EB /* MindBodyParser.m */; };
 		A89923AD13FC773E006F16EB /* MindBodyParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A89923AB13FC773E006F16EB /* MindBodyParser.m */; };
+		A8B33D2D13FE1F48003E6B58 /* ClassesController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B33D2A13FE1F48003E6B58 /* ClassesController.m */; };
+		A8B33D2E13FE1F48003E6B58 /* ClassTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B33D2C13FE1F48003E6B58 /* ClassTableViewCell.m */; };
 		A8F3C35113FCCAFA00384B94 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F3C34E13FCCAFA00384B94 /* NSDataAdditions.m */; };
 		A8F3C35213FCCAFA00384B94 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F3C34E13FCCAFA00384B94 /* NSDataAdditions.m */; };
 		A8F3C35313FCCAFA00384B94 /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F3C35013FCCAFA00384B94 /* TBXML.m */; };
@@ -75,6 +77,10 @@
 		A89923A813FC76FD006F16EB /* query_classes_result.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = query_classes_result.xml; sourceTree = "<group>"; };
 		A89923AA13FC773E006F16EB /* MindBodyParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MindBodyParser.h; sourceTree = "<group>"; };
 		A89923AB13FC773E006F16EB /* MindBodyParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MindBodyParser.m; sourceTree = "<group>"; };
+		A8B33D2913FE1F48003E6B58 /* ClassesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassesController.h; sourceTree = "<group>"; };
+		A8B33D2A13FE1F48003E6B58 /* ClassesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassesController.m; sourceTree = "<group>"; };
+		A8B33D2B13FE1F48003E6B58 /* ClassTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassTableViewCell.h; sourceTree = "<group>"; };
+		A8B33D2C13FE1F48003E6B58 /* ClassTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassTableViewCell.m; sourceTree = "<group>"; };
 		A8F3C34D13FCCAFA00384B94 /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
 		A8F3C34E13FCCAFA00384B94 /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
 		A8F3C34F13FCCAFA00384B94 /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
@@ -146,6 +152,10 @@
 		A899236413FC4FD8006F16EB /* Yoga */ = {
 			isa = PBXGroup;
 			children = (
+				A8B33D2913FE1F48003E6B58 /* ClassesController.h */,
+				A8B33D2A13FE1F48003E6B58 /* ClassesController.m */,
+				A8B33D2B13FE1F48003E6B58 /* ClassTableViewCell.h */,
+				A8B33D2C13FE1F48003E6B58 /* ClassTableViewCell.m */,
 				A814AFC113FD61D20040C33C /* Constants.h */,
 				A814AFC213FD61D20040C33C /* Constants.m */,
 				A899236D13FC4FD8006F16EB /* YogaAppDelegate.h */,
@@ -346,6 +356,8 @@
 				A8F3C35113FCCAFA00384B94 /* NSDataAdditions.m in Sources */,
 				A8F3C35313FCCAFA00384B94 /* TBXML.m in Sources */,
 				A814AFC313FD61D20040C33C /* Constants.m in Sources */,
+				A8B33D2D13FE1F48003E6B58 /* ClassesController.m in Sources */,
+				A8B33D2E13FE1F48003E6B58 /* ClassTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
