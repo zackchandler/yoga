@@ -36,12 +36,28 @@ static NSString *kErrorFetchingClassesMessage = @"Unable to refresh classes list
 #pragma mark Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return [self.classes count];
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    NSArray *classesForDay = [self.classes objectAtIndex:section];
+    NSDictionary *aClass = [classesForDay lastObject];
+    NSDate *startDate = [aClass objectForKey:kStartDate];
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
+    [dateFormatter setDateStyle:NSDateFormatterFullStyle];
+    
+    NSString *dateString = [dateFormatter stringFromDate:startDate];
+
+    [dateFormatter release];
+    
+    return dateString;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    // Return the number of rows in the section.
-    return [self.classes count];
+    NSArray *classesForDay = [self.classes objectAtIndex:section];
+    return [classesForDay count];
 }
 
 // Customize the appearance of table view cells.
@@ -54,7 +70,8 @@ static NSString *kErrorFetchingClassesMessage = @"Unable to refresh classes list
 		cell.accessoryType = UITableViewCellAccessoryNone;
 	}
 	
-	NSDictionary *klass = [self.classes objectAtIndex:indexPath.row];
+    NSArray *classesForDay = [self.classes objectAtIndex:indexPath.section];
+	NSDictionary *klass = [classesForDay objectAtIndex:indexPath.row];
 	
 	cell.klassName = [klass objectForKey:kClassName];
 	cell.instructorName = [klass objectForKey:kInstructorName];
@@ -94,12 +111,48 @@ static NSString *kErrorFetchingClassesMessage = @"Unable to refresh classes list
     [self.queue addOperation:request];
 }
 
-- (void)requestSucceeded:(ASIHTTPRequest *)request {
-    NSString *response = [request responseString];
-    
+- (void)requestSucceeded:(ASIHTTPRequest *)request {    
     // Move parsing off main thread?
     NSData *xmlData = [NSData dataWithContentsOfFile:[self classesFilePath]];
-    self.classes = [self.parser parseClassesXML:xmlData];
+    NSArray *rawClassList = [self.parser parseClassesXML:xmlData];
+    
+    if ([rawClassList count] > 0) {
+        // Build data structure which is an Array of array of classes
+        // [
+        //   [ class, class ],
+        //   [ class, class ]
+        // ]
+        NSMutableArray *allClasses = [NSMutableArray array];
+        
+        // Compare dates as strings because it is clean and simple
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
+        [dateFormatter setDateStyle:NSDateFormatterShortStyle];
+        
+        NSString *currentDay = @"";
+        NSMutableArray *classesForCurrentDayArray;
+        
+        for (NSDictionary *klass in rawClassList) {
+            NSDate *startDate = [klass objectForKey:kStartDate];
+            NSString *dateString = [dateFormatter stringFromDate:startDate];
+            
+            if ([dateString isEqualToString:currentDay]) {
+                // append class
+                [classesForCurrentDayArray addObject:klass];
+            } else {
+                currentDay = dateString;
+                // create array, add class, and add to class list
+                classesForCurrentDayArray = [NSMutableArray arrayWithObject:klass];
+                [allClasses addObject:classesForCurrentDayArray];
+            }
+        }
+        
+        [dateFormatter release];
+        
+        self.classes = allClasses;
+    } else {
+        self.classes = [NSMutableArray array];
+    }
 
     [self.tableView reloadData];
 }
