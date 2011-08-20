@@ -22,6 +22,8 @@ static NSString *kErrorFetchingClassesMessage = @"Unable to refresh classes list
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
+    
+    self.tableView.allowsSelection = NO;
 	
     [self refreshClasses];
 }
@@ -53,7 +55,6 @@ static NSString *kErrorFetchingClassesMessage = @"Unable to refresh classes list
 	}
 	
 	NSDictionary *klass = [self.classes objectAtIndex:indexPath.row];
-	NSLog(@"%@", klass);
 	
 	cell.klassName = [klass objectForKey:kClassName];
 	cell.instructorName = [klass objectForKey:kInstructorName];
@@ -69,16 +70,6 @@ static NSString *kErrorFetchingClassesMessage = @"Unable to refresh classes list
 #pragma mark -
 #pragma mark Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
-    [detailViewController release];
-    */
-}
 
 #pragma mark -
 #pragma mark Network
@@ -105,7 +96,6 @@ static NSString *kErrorFetchingClassesMessage = @"Unable to refresh classes list
 
 - (void)requestSucceeded:(ASIHTTPRequest *)request {
     NSString *response = [request responseString];
-    NSLog(@"Request succeeded: %@", response);
     
     // Move parsing off main thread?
     NSData *xmlData = [NSData dataWithContentsOfFile:[self classesFilePath]];
@@ -115,9 +105,6 @@ static NSString *kErrorFetchingClassesMessage = @"Unable to refresh classes list
 }
 
 - (void)requestFailed:(ASIHTTPRequest *)request {
-    NSLog(@"Request failed: %@", [request responseStatusMessage]);
-    NSLog(@"Request failed: %@", [request responseStatusCode]);
-    
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:kErrorFetchingClassesTitle message:kErrorFetchingClassesMessage delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
     [alertView show];
     [alertView release];

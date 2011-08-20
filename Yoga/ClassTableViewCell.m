@@ -9,15 +9,15 @@
 
 #define CLASS_TIME_X 5
 #define CLASS_TIME_Y 8
-#define CLASS_TIME_WIDTH 200
+#define CLASS_TIME_WIDTH 100
 #define CLASS_TIME_FONT_SIZE 10
 
-#define CLASS_NAME_X 110
+#define CLASS_NAME_X 115
 #define CLASS_NAME_Y 5
 #define CLASS_NAME_WIDTH 200
 #define CLASS_NAME_FONT_SIZE 14
 
-#define INSTRUCTOR_NAME_X 110
+#define INSTRUCTOR_NAME_X 115
 #define INSTRUCTOR_NAME_Y 24
 #define INSTRUCTOR_NAME_WIDTH 200
 #define INSTRUCTOR_NAME_FONT_SIZE 12
@@ -25,15 +25,19 @@
 - (void)drawRect:(CGRect)rect {
 	// draw class time
 	[[UIColor darkGrayColor] set];
-	CGPoint classTimePoint = CGPointMake(CLASS_TIME_X, CLASS_TIME_Y);
 	UIFont *classTimeFont = [UIFont systemFontOfSize:CLASS_TIME_FONT_SIZE];
 	
 	NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
 	[dateFormatter setTimeStyle:NSDateFormatterShortStyle];
 	[dateFormatter setDateStyle:NSDateFormatterNoStyle];
+    
 	NSString *classTime = [NSString stringWithFormat:@"%@ - %@", [dateFormatter stringFromDate:self.startDate], [dateFormatter stringFromDate:self.endDate]];
-	NSLog(@"classTime: %@", classTime);
-	[classTime drawAtPoint:classTimePoint forWidth:CLASS_TIME_WIDTH withFont:classTimeFont lineBreakMode:UILineBreakModeTailTruncation];
+
+    // Calculate for right alignment
+    CGSize classTimeSize = [classTime sizeWithFont:classTimeFont forWidth:CLASS_TIME_WIDTH lineBreakMode:UILineBreakModeTailTruncation];
+	CGPoint classTimePoint = CGPointMake(CLASS_TIME_X + CLASS_TIME_WIDTH - classTimeSize.width, CLASS_TIME_Y);
+
+    [classTime drawAtPoint:classTimePoint forWidth:CLASS_TIME_WIDTH withFont:classTimeFont lineBreakMode:UILineBreakModeTailTruncation];
 	
 	// draw class name
 	[[UIColor blackColor] set];
