@@ -3,10 +3,10 @@
 #import "ClassesController.h"
 
 @interface YogaAppDelegate : NSObject <UIApplicationDelegate> {
-    ClassesController *classesController;
+    UINavigationController *classesNavController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) ClassesController *classesController;
+@property (nonatomic, retain) UINavigationController *classesNavController;
 
 @end

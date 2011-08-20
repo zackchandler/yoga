@@ -23,6 +23,7 @@ static NSString *kErrorFetchingClassesMessage = @"Unable to refresh classes list
 - (void)viewDidLoad {
 	[super viewDidLoad];
     
+    self.title = kClassesControllerTitle;
     self.tableView.allowsSelection = NO;
 	
     [self refreshClasses];

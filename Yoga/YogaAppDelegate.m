@@ -3,15 +3,16 @@
 @implementation YogaAppDelegate
 
 @synthesize window = _window;
-@synthesize classesController;
+@synthesize classesNavController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
     ClassesController *aKlassesController = [[ClassesController alloc] initWithStyle:UITableViewStylePlain];
-	self.classesController = aKlassesController;
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:aKlassesController];
+    self.classesNavController = navController;
     [aKlassesController release];
+    [navController release];    
     
-	[self.window addSubview:self.classesController.view];
+	[self.window addSubview:self.classesNavController.view];
     
     [self.window makeKeyAndVisible];
     
@@ -59,7 +60,7 @@
 
 - (void)dealloc {
     [_window release];
-    [classesController release];
+    [classesNavController release];
     
     [super dealloc];
 }
