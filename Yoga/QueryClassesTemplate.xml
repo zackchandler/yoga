@@ -12,13 +12,13 @@
           </SiteIDs>
         </SourceCredentials>
         <XMLDetail>Bare</XMLDetail>
-        <PageSize>30</PageSize>
+        <PageSize>50</PageSize>
         <CurrentPageIndex>0</CurrentPageIndex>
         <SearchLatitude>37.8903493</SearchLatitude>
         <SearchLongitude>-122.0574117</SearchLongitude>
         <SearchRadius>3</SearchRadius>
-        <StartDateTime>2011-08-19</StartDateTime>
-        <EndDateTime>2011-08-22</EndDateTime>
+        <StartDateTime>{{StartDateTime}}</StartDateTime>
+        <EndDateTime>{{EndDateTime}}</EndDateTime>
         <SearchLocationID>4</SearchLocationID>
         <Fields>
            <string>FinderClasses.ClassName</string>

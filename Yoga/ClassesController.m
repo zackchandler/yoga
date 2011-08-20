@@ -100,8 +100,22 @@ static NSString *kErrorFetchingClassesMessage = @"Unable to refresh classes list
     [request addRequestHeader:@"Soapaction" value:@"http://clients.mindbodyonline.com/api/0_5/GetClassesWithinRadius"];
     
     NSString *queryClassesTemplateFilePath = [[NSBundle mainBundle] pathForResource:@"QueryClassesTemplate" ofType:@"xml"];
-    NSMutableData *postBody = [NSMutableData dataWithContentsOfFile:queryClassesTemplateFilePath];
-    [request setPostBody:postBody];
+    NSString *postString = [NSString stringWithContentsOfFile:queryClassesTemplateFilePath encoding:NSUTF8StringEncoding error:nil];
+
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+    NSDate *today = [NSDate dateWithTimeIntervalSinceNow:0];
+    // Five days from now
+    NSDate *endDate = [NSDate dateWithTimeIntervalSinceNow:(60*60*24*5)];
+    NSString *startDateString = [dateFormatter stringFromDate:today];
+    NSString *endDateString = [dateFormatter stringFromDate:endDate];
+    [dateFormatter release];
+    
+    postString = [postString stringByReplacingOccurrencesOfString:@"{{StartDateTime}}" withString:startDateString];
+    postString = [postString stringByReplacingOccurrencesOfString:@"{{EndDateTime}}" withString:endDateString];
+    
+    NSData *postBody = [postString dataUsingEncoding:NSUTF8StringEncoding];
+    [request setPostBody:[NSMutableData dataWithData:postBody]];
     
     [request setDownloadDestinationPath:[self classesFilePath]];
     
