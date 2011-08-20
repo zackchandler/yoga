@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A814AFC313FD61D20040C33C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = A814AFC213FD61D20040C33C /* Constants.m */; };
 		A814AFC413FD61D20040C33C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = A814AFC213FD61D20040C33C /* Constants.m */; };
+		A860B80C13FF66BC00D1BD10 /* QueryClassesTemplate.xml in Resources */ = {isa = PBXBuildFile; fileRef = A860B80B13FF66BC00D1BD10 /* QueryClassesTemplate.xml */; };
 		A899235F13FC4FD8006F16EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A899235E13FC4FD8006F16EB /* UIKit.framework */; };
 		A899236113FC4FD8006F16EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A899236013FC4FD8006F16EB /* Foundation.framework */; };
 		A899236313FC4FD8006F16EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A899236213FC4FD8006F16EB /* CoreGraphics.framework */; };
@@ -64,6 +65,7 @@
 /* Begin PBXFileReference section */
 		A814AFC113FD61D20040C33C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		A814AFC213FD61D20040C33C /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		A860B80B13FF66BC00D1BD10 /* QueryClassesTemplate.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = QueryClassesTemplate.xml; sourceTree = "<group>"; };
 		A899235A13FC4FD8006F16EB /* Yoga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yoga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A899235E13FC4FD8006F16EB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A899236013FC4FD8006F16EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -218,6 +220,7 @@
 		A899236513FC4FD8006F16EB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A860B80B13FF66BC00D1BD10 /* QueryClassesTemplate.xml */,
 				A899236613FC4FD8006F16EB /* Yoga-Info.plist */,
 				A899236713FC4FD8006F16EB /* InfoPlist.strings */,
 				A899236A13FC4FD8006F16EB /* main.m */,
@@ -394,6 +397,7 @@
 				A899236913FC4FD8006F16EB /* InfoPlist.strings in Resources */,
 				A899237613FC4FD8006F16EB /* MainWindow_iPhone.xib in Resources */,
 				A899237D13FC4FD8006F16EB /* MainWindow_iPad.xib in Resources */,
+				A860B80C13FF66BC00D1BD10 /* QueryClassesTemplate.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

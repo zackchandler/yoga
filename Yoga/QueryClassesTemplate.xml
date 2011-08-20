@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <GetClassesWithinRadius xmlns="http://clients.mindbodyonline.com/api/0_5">
+      <Request>
+        <SourceCredentials>
+					<SourceName>StudioSix</SourceName> 
+					<Password>StudioSix9384!</Password>
+          <SiteIDs>
+            <int>-141</int>
+          </SiteIDs>
+        </SourceCredentials>
+        <XMLDetail>Bare</XMLDetail>
+        <PageSize>30</PageSize>
+        <CurrentPageIndex>0</CurrentPageIndex>
+        <SearchLatitude>37.8903493</SearchLatitude>
+        <SearchLongitude>-122.0574117</SearchLongitude>
+        <SearchRadius>3</SearchRadius>
+        <StartDateTime>2011-08-19</StartDateTime>
+        <EndDateTime>2011-08-22</EndDateTime>
+        <SearchLocationID>4</SearchLocationID>
+        <Fields>
+           <string>FinderClasses.ClassName</string>
+           <string>FinderClasses.StartDateTime</string>
+           <string>FinderClasses.EndDateTime</string>
+           <string>FinderClasses.Staff.Name</string>
+        </Fields>        
+      </Request>
+    </GetClassesWithinRadius>
+  </soapenv:Body>
+</soapenv:Envelope>

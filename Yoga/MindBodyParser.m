@@ -27,7 +27,7 @@
     TBXMLElement *finderClassNode = [TBXML childElementNamed:@"FinderClass" parentElement:finderClassesNode];
     if (finderClassNode) {
         NSDateFormatter* dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
-        [dateFormatter setDateFormat:kMindyBodyAPIDateFormat];
+        [dateFormatter setDateFormat:kMindBodyAPIDateFormat];
         
         do {
             NSDictionary *klass = [self parseFinderClassNode:finderClassNode dateFormatter:dateFormatter];
@@ -44,6 +44,10 @@
     // Class name
     TBXMLElement *classNameNode = [TBXML childElementNamed:@"ClassName" parentElement:node];
     NSString *className = [TBXML textForElement:classNameNode];
+    
+    // Some classes in WC have the music entity tagged on (&amp;#9835;)
+    className = [className stringByReplacingOccurrencesOfString:@"&amp;#9835;" withString:@""];
+    className = [className stringByReplacingOccurrencesOfString:@"&amp;#9733;" withString:@""];
     
     // Instructor name
     TBXMLElement *staffNode = [TBXML childElementNamed:@"Staff" parentElement:node];
