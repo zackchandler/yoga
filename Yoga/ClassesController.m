@@ -6,7 +6,8 @@ static NSString *kErrorFetchingClassesMessage = @"Unable to refresh classes list
 
 @interface ClassesController()
 
-- (void)refreshClasses;
+- (void)refreshClassesFromAPI;
+- (void)refreshClassesFromCachedFile;
 - (NSString *)classesFilePath;
 
 @end
@@ -26,7 +27,8 @@ static NSString *kErrorFetchingClassesMessage = @"Unable to refresh classes list
     self.title = kClassesControllerTitle;
     self.tableView.allowsSelection = NO;
 	
-    [self refreshClasses];
+    [self refreshClassesFromCachedFile];
+    [self refreshClassesFromAPI];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -92,7 +94,7 @@ static NSString *kErrorFetchingClassesMessage = @"Unable to refresh classes list
 #pragma mark -
 #pragma mark Network
 
-- (void)refreshClasses {
+- (void)refreshClassesFromAPI {
     NSURL *url = [NSURL URLWithString:kMindBodyFetchClassesURL];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     
@@ -127,6 +129,16 @@ static NSString *kErrorFetchingClassesMessage = @"Unable to refresh classes list
 }
 
 - (void)requestSucceeded:(ASIHTTPRequest *)request {    
+    [self refreshClassesFromCachedFile];
+}
+
+- (void)requestFailed:(ASIHTTPRequest *)request {
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:kErrorFetchingClassesTitle message:kErrorFetchingClassesMessage delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
+    [alertView show];
+    [alertView release];
+}
+
+- (void)refreshClassesFromCachedFile {
     // Move parsing off main thread?
     NSData *xmlData = [NSData dataWithContentsOfFile:[self classesFilePath]];
     NSArray *rawClassList = [self.parser parseClassesXML:xmlData];
@@ -168,14 +180,8 @@ static NSString *kErrorFetchingClassesMessage = @"Unable to refresh classes list
     } else {
         self.classes = [NSMutableArray array];
     }
-
+    
     [self.tableView reloadData];
-}
-
-- (void)requestFailed:(ASIHTTPRequest *)request {
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:kErrorFetchingClassesTitle message:kErrorFetchingClassesMessage delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
-    [alertView show];
-    [alertView release];
 }
 
 - (NSString *)classesFilePath {
