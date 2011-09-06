@@ -6,8 +6,11 @@ static NSString *kErrorFetchingClassesMessage = @"Unable to refresh classes list
 
 @interface ClassesController()
 
+- (void)renderUI;
 - (void)refreshClassesFromAPI;
 - (void)refreshClassesFromCachedFile;
+- (void)applicationWillEnterForeground;
+- (void)applicationDidEnterBackground;
 - (NSString *)classesFilePath;
 
 @end
@@ -27,8 +30,11 @@ static NSString *kErrorFetchingClassesMessage = @"Unable to refresh classes list
     self.title = kClassesControllerTitle;
     self.tableView.allowsSelection = NO;
 	
-    [self refreshClassesFromCachedFile];
-    [self refreshClassesFromAPI];
+    [self renderUI];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillEnterForeground) name:UIApplicationDidBecomeActiveNotification object:nil];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidEnterBackground) name: UIApplicationDidEnterBackgroundNotification object:nil];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -94,6 +100,57 @@ static NSString *kErrorFetchingClassesMessage = @"Unable to refresh classes list
 #pragma mark -
 #pragma mark Network
 
+- (void)renderUI {
+    [self refreshClassesFromCachedFile];
+    [self refreshClassesFromAPI];
+}
+
+- (void)refreshClassesFromCachedFile {
+    // Move parsing off main thread?
+    NSData *xmlData = [NSData dataWithContentsOfFile:[self classesFilePath]];
+    NSArray *rawClassList = [self.parser parseClassesXML:xmlData];
+    
+    if ([rawClassList count] > 0) {
+        // Build data structure which is an Array of array of classes
+        // [
+        //   [ class, class ],
+        //   [ class, class ]
+        // ]
+        NSMutableArray *allClasses = [NSMutableArray array];
+        
+        // Compare dates as strings because it is clean and simple
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
+        [dateFormatter setDateStyle:NSDateFormatterShortStyle];
+        
+        NSString *currentDay = @"";
+        NSMutableArray *classesForCurrentDayArray = nil;
+        
+        for (NSDictionary *klass in rawClassList) {
+            NSDate *startDate = [klass objectForKey:kStartDate];
+            NSString *dateString = [dateFormatter stringFromDate:startDate];
+            
+            if ([dateString isEqualToString:currentDay]) {
+                // append class
+                [classesForCurrentDayArray addObject:klass];
+            } else {
+                currentDay = dateString;
+                // create array, add class, and add to class list
+                classesForCurrentDayArray = [NSMutableArray arrayWithObject:klass];
+                [allClasses addObject:classesForCurrentDayArray];
+            }
+        }
+        
+        [dateFormatter release];
+        
+        self.classes = allClasses;
+    } else {
+        self.classes = [NSMutableArray array];
+    }
+    
+    [self.tableView reloadData];
+}
+
 - (void)refreshClassesFromAPI {
     NSURL *url = [NSURL URLWithString:kMindBodyFetchClassesURL];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
@@ -138,50 +195,12 @@ static NSString *kErrorFetchingClassesMessage = @"Unable to refresh classes list
     [alertView release];
 }
 
-- (void)refreshClassesFromCachedFile {
-    // Move parsing off main thread?
-    NSData *xmlData = [NSData dataWithContentsOfFile:[self classesFilePath]];
-    NSArray *rawClassList = [self.parser parseClassesXML:xmlData];
-    
-    if ([rawClassList count] > 0) {
-        // Build data structure which is an Array of array of classes
-        // [
-        //   [ class, class ],
-        //   [ class, class ]
-        // ]
-        NSMutableArray *allClasses = [NSMutableArray array];
-        
-        // Compare dates as strings because it is clean and simple
-        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
-        [dateFormatter setDateStyle:NSDateFormatterShortStyle];
-        
-        NSString *currentDay = @"";
-        NSMutableArray *classesForCurrentDayArray;
-        
-        for (NSDictionary *klass in rawClassList) {
-            NSDate *startDate = [klass objectForKey:kStartDate];
-            NSString *dateString = [dateFormatter stringFromDate:startDate];
-            
-            if ([dateString isEqualToString:currentDay]) {
-                // append class
-                [classesForCurrentDayArray addObject:klass];
-            } else {
-                currentDay = dateString;
-                // create array, add class, and add to class list
-                classesForCurrentDayArray = [NSMutableArray arrayWithObject:klass];
-                [allClasses addObject:classesForCurrentDayArray];
-            }
-        }
-        
-        [dateFormatter release];
-        
-        self.classes = allClasses;
-    } else {
-        self.classes = [NSMutableArray array];
-    }
-    
-    [self.tableView reloadData];
+- (void)applicationWillEnterForeground {
+    [self renderUI];
+}
+
+- (void)applicationDidEnterBackground {
+    [self.queue cancelAllOperations];
 }
 
 - (NSString *)classesFilePath {
@@ -225,6 +244,10 @@ static NSString *kErrorFetchingClassesMessage = @"Unable to refresh classes list
 
 #pragma mark -
 #pragma mark Memory management
+
+- (void)viewDidUnload {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidBecomeActiveNotification object:nil];
+}
 
 - (void)dealloc {
 	[classes release];

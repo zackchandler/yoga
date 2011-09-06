@@ -54,6 +54,8 @@
 
     CGFloat instructorNameWidth = self.bounds.size.width - CLASS_TIME_WIDTH - CLASS_TIME_X - (2 * PADDING);
 	[self.instructorName drawAtPoint:instructorNamePoint forWidth:instructorNameWidth withFont:instructorNameFont lineBreakMode:UILineBreakModeTailTruncation];
+    
+    [dateFormatter release];
 }
 
 - (void)dealloc {
