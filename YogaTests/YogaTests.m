@@ -27,7 +27,7 @@ static NSString * const kPathToClassesXML = @"/Users/zackchandler/dev/Yoga/YogaT
     // Check class #1 - AM class
     NSDictionary *class1 = (NSDictionary *)[klasses objectAtIndex:0];
     
-    STAssertEqualObjects(@"Yoga Blend (1/2) &amp;#9835;", [class1 objectForKey:kClassName], @"Class name incorrect");
+    STAssertEqualObjects(@"Yoga Blend (1/2) ", [class1 objectForKey:kClassName], @"Class name incorrect");
     STAssertEqualObjects(@"Sonia Roberts", [class1 objectForKey:kInstructorName], @"Instructor name incorrect");
     
     NSDate *startDate = (NSDate *)[class1 objectForKey:kStartDate];
@@ -39,7 +39,7 @@ static NSString * const kPathToClassesXML = @"/Users/zackchandler/dev/Yoga/YogaT
     // Check class #17 - PM class
     NSDictionary *class17 = (NSDictionary *)[klasses objectAtIndex:16];
     
-    STAssertEqualObjects(@"Vinyasa Flow (2) &amp;#9835;", [class17 objectForKey:kClassName], @"Class name incorrect");
+    STAssertEqualObjects(@"Vinyasa Flow (2) ", [class17 objectForKey:kClassName], @"Class name incorrect");
     STAssertEqualObjects(@"Otto Dittmer", [class17 objectForKey:kInstructorName], @"Instructor name incorrect");
     
     startDate = (NSDate *)[class17 objectForKey:kStartDate];
