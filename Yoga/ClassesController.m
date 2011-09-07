@@ -9,6 +9,7 @@ static NSString *kErrorFetchingClassesMessage = @"Unable to refresh classes list
 - (void)renderUI;
 - (void)refreshClassesFromAPI;
 - (void)refreshClassesFromCachedFile;
+- (NSData *)apiDataFromCachedFile;
 - (void)applicationWillEnterForeground;
 - (void)applicationDidEnterBackground;
 - (NSString *)classesFilePath;
@@ -29,6 +30,7 @@ static NSString *kErrorFetchingClassesMessage = @"Unable to refresh classes list
     
     self.title = kClassesControllerTitle;
     self.tableView.allowsSelection = NO;
+    self.tableView.accessibilityLabel = @"ClassesTableView";
 	
     [self renderUI];
     
@@ -107,7 +109,7 @@ static NSString *kErrorFetchingClassesMessage = @"Unable to refresh classes list
 
 - (void)refreshClassesFromCachedFile {
     // Move parsing off main thread?
-    NSData *xmlData = [NSData dataWithContentsOfFile:[self classesFilePath]];
+    NSData *xmlData = [self apiDataFromCachedFile];
     NSArray *rawClassList = [self.parser parseClassesXML:xmlData];
     
     if ([rawClassList count] > 0) {
@@ -183,6 +185,10 @@ static NSString *kErrorFetchingClassesMessage = @"Unable to refresh classes list
     [request setDidFailSelector:@selector(requestFailed:)];
  
     [self.queue addOperation:request];
+}
+
+- (NSData *)apiDataFromCachedFile {
+    return [NSData dataWithContentsOfFile:[self classesFilePath]];
 }
 
 - (void)requestSucceeded:(ASIHTTPRequest *)request {    

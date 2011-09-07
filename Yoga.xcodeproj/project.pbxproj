@@ -7,8 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A801097D1416D88200F540FC /* KIFTestScenario+YogaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A801097A1416D88200F540FC /* KIFTestScenario+YogaAdditions.m */; };
+		A801097E1416D88200F540FC /* KIFTestScenario+YogaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A801097A1416D88200F540FC /* KIFTestScenario+YogaAdditions.m */; };
+		A801097F1416D88200F540FC /* YogaTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = A801097C1416D88200F540FC /* YogaTestController.m */; };
+		A80109801416D88200F540FC /* YogaTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = A801097C1416D88200F540FC /* YogaTestController.m */; };
+		A80109841416DC4600F540FC /* Yoga copy-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A80109831416DC4600F540FC /* Yoga copy-Info.plist */; };
 		A814AFC313FD61D20040C33C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = A814AFC213FD61D20040C33C /* Constants.m */; };
 		A814AFC413FD61D20040C33C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = A814AFC213FD61D20040C33C /* Constants.m */; };
+		A84AD32F1416D39400D79893 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A899236A13FC4FD8006F16EB /* main.m */; };
+		A84AD3301416D39400D79893 /* YogaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A899236E13FC4FD8006F16EB /* YogaAppDelegate.m */; };
+		A84AD3311416D39400D79893 /* YogaAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = A899237213FC4FD8006F16EB /* YogaAppDelegate_iPhone.m */; };
+		A84AD3321416D39400D79893 /* YogaAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = A899237913FC4FD8006F16EB /* YogaAppDelegate_iPad.m */; };
+		A84AD3331416D39400D79893 /* MindBodyParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A89923AB13FC773E006F16EB /* MindBodyParser.m */; };
+		A84AD3341416D39400D79893 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F3C34E13FCCAFA00384B94 /* NSDataAdditions.m */; };
+		A84AD3351416D39400D79893 /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F3C35013FCCAFA00384B94 /* TBXML.m */; };
+		A84AD3361416D39400D79893 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = A814AFC213FD61D20040C33C /* Constants.m */; };
+		A84AD3371416D39400D79893 /* ClassesController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B33D2A13FE1F48003E6B58 /* ClassesController.m */; };
+		A84AD3381416D39400D79893 /* ClassTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B33D2C13FE1F48003E6B58 /* ClassTableViewCell.m */; };
+		A84AD3391416D39400D79893 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B33D3213FE21CA003E6B58 /* ASIAuthenticationDialog.m */; };
+		A84AD33A1416D39400D79893 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B33D3413FE21CA003E6B58 /* ASIDataCompressor.m */; };
+		A84AD33B1416D39400D79893 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B33D3613FE21CA003E6B58 /* ASIDataDecompressor.m */; };
+		A84AD33C1416D39400D79893 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B33D3813FE21CA003E6B58 /* ASIDownloadCache.m */; };
+		A84AD33D1416D39400D79893 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B33D3A13FE21CA003E6B58 /* ASIHTTPRequest.m */; };
+		A84AD33E1416D39400D79893 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B33D3E13FE21CA003E6B58 /* ASIInputStream.m */; };
+		A84AD33F1416D39400D79893 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B33D4013FE21CA003E6B58 /* ASINetworkQueue.m */; };
+		A84AD3401416D39400D79893 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B33D4413FE21CA003E6B58 /* Reachability.m */; };
+		A84AD3421416D39400D79893 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B33D5413FE2243003E6B58 /* libz.1.2.3.dylib */; };
+		A84AD3431416D39400D79893 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A899236213FC4FD8006F16EB /* CoreGraphics.framework */; };
+		A84AD3441416D39400D79893 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B33D5113FE2224003E6B58 /* MobileCoreServices.framework */; };
+		A84AD3451416D39400D79893 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B33D4F13FE221C003E6B58 /* SystemConfiguration.framework */; };
+		A84AD3461416D39400D79893 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B33D4D13FE2212003E6B58 /* CFNetwork.framework */; };
+		A84AD3471416D39400D79893 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F3C35513FCCB4A00384B94 /* libz.dylib */; };
+		A84AD3481416D39400D79893 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A899235E13FC4FD8006F16EB /* UIKit.framework */; };
+		A84AD3491416D39400D79893 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A899236013FC4FD8006F16EB /* Foundation.framework */; };
+		A84AD34B1416D39400D79893 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A899236713FC4FD8006F16EB /* InfoPlist.strings */; };
+		A84AD34C1416D39400D79893 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A899237413FC4FD8006F16EB /* MainWindow_iPhone.xib */; };
+		A84AD34D1416D39400D79893 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A899237B13FC4FD8006F16EB /* MainWindow_iPad.xib */; };
+		A84AD34E1416D39400D79893 /* QueryClassesTemplate.xml in Resources */ = {isa = PBXBuildFile; fileRef = A860B80B13FF66BC00D1BD10 /* QueryClassesTemplate.xml */; };
+		A84AD3571416D3FD00D79893 /* libKIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A84AD3561416D3FD00D79893 /* libKIF.a */; };
 		A860B80C13FF66BC00D1BD10 /* QueryClassesTemplate.xml in Resources */ = {isa = PBXBuildFile; fileRef = A860B80B13FF66BC00D1BD10 /* QueryClassesTemplate.xml */; };
 		A899235F13FC4FD8006F16EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A899235E13FC4FD8006F16EB /* UIKit.framework */; };
 		A899236113FC4FD8006F16EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A899236013FC4FD8006F16EB /* Foundation.framework */; };
@@ -63,8 +99,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A80109791416D88200F540FC /* KIFTestScenario+YogaAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KIFTestScenario+YogaAdditions.h"; sourceTree = "<group>"; };
+		A801097A1416D88200F540FC /* KIFTestScenario+YogaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KIFTestScenario+YogaAdditions.m"; sourceTree = "<group>"; };
+		A801097B1416D88200F540FC /* YogaTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YogaTestController.h; sourceTree = "<group>"; };
+		A801097C1416D88200F540FC /* YogaTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YogaTestController.m; sourceTree = "<group>"; };
+		A80109831416DC4600F540FC /* Yoga copy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Yoga copy-Info.plist"; sourceTree = "<group>"; };
 		A814AFC113FD61D20040C33C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		A814AFC213FD61D20040C33C /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		A84AD3521416D39400D79893 /* YogaIntegationTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YogaIntegationTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A84AD3561416D3FD00D79893 /* libKIF.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKIF.a; path = "Frameworks/KIF/build/Release-iphoneos/libKIF.a"; sourceTree = "<group>"; };
 		A860B80B13FF66BC00D1BD10 /* QueryClassesTemplate.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = QueryClassesTemplate.xml; sourceTree = "<group>"; };
 		A899235A13FC4FD8006F16EB /* Yoga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yoga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A899235E13FC4FD8006F16EB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -129,6 +172,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A84AD3411416D39400D79893 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A84AD3571416D3FD00D79893 /* libKIF.a in Frameworks */,
+				A84AD3421416D39400D79893 /* libz.1.2.3.dylib in Frameworks */,
+				A84AD3431416D39400D79893 /* CoreGraphics.framework in Frameworks */,
+				A84AD3441416D39400D79893 /* MobileCoreServices.framework in Frameworks */,
+				A84AD3451416D39400D79893 /* SystemConfiguration.framework in Frameworks */,
+				A84AD3461416D39400D79893 /* CFNetwork.framework in Frameworks */,
+				A84AD3471416D39400D79893 /* libz.dylib in Frameworks */,
+				A84AD3481416D39400D79893 /* UIKit.framework in Frameworks */,
+				A84AD3491416D39400D79893 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A899235713FC4FD8006F16EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -159,14 +218,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A80109781416D88200F540FC /* YogaIntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				A80109791416D88200F540FC /* KIFTestScenario+YogaAdditions.h */,
+				A801097A1416D88200F540FC /* KIFTestScenario+YogaAdditions.m */,
+				A801097B1416D88200F540FC /* YogaTestController.h */,
+				A801097C1416D88200F540FC /* YogaTestController.m */,
+			);
+			path = YogaIntegrationTests;
+			sourceTree = "<group>";
+		};
 		A899234F13FC4FD8006F16EB = {
 			isa = PBXGroup;
 			children = (
+				A84AD3561416D3FD00D79893 /* libKIF.a */,
 				A89923A113FC5455006F16EB /* Vendor */,
 				A899236413FC4FD8006F16EB /* Yoga */,
 				A899238B13FC4FD8006F16EB /* YogaTests */,
+				A80109781416D88200F540FC /* YogaIntegrationTests */,
 				A899235D13FC4FD8006F16EB /* Frameworks */,
 				A899235B13FC4FD8006F16EB /* Products */,
+				A80109831416DC4600F540FC /* Yoga copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,6 +248,7 @@
 			children = (
 				A899235A13FC4FD8006F16EB /* Yoga.app */,
 				A899238313FC4FD8006F16EB /* YogaTests.octest */,
+				A84AD3521416D39400D79893 /* YogaIntegationTests.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -327,6 +401,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A84AD32D1416D39400D79893 /* YogaIntegrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A84AD34F1416D39400D79893 /* Build configuration list for PBXNativeTarget "YogaIntegrationTests" */;
+			buildPhases = (
+				A84AD32E1416D39400D79893 /* Sources */,
+				A84AD3411416D39400D79893 /* Frameworks */,
+				A84AD34A1416D39400D79893 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YogaIntegrationTests;
+			productName = Yoga;
+			productReference = A84AD3521416D39400D79893 /* YogaIntegationTests.app */;
+			productType = "com.apple.product-type.application";
+		};
 		A899235913FC4FD8006F16EB /* Yoga */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A899239713FC4FD9006F16EB /* Build configuration list for PBXNativeTarget "Yoga" */;
@@ -385,11 +476,24 @@
 			targets = (
 				A899235913FC4FD8006F16EB /* Yoga */,
 				A899238213FC4FD8006F16EB /* YogaTests */,
+				A84AD32D1416D39400D79893 /* YogaIntegrationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A84AD34A1416D39400D79893 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A84AD34B1416D39400D79893 /* InfoPlist.strings in Resources */,
+				A84AD34C1416D39400D79893 /* MainWindow_iPhone.xib in Resources */,
+				A84AD34D1416D39400D79893 /* MainWindow_iPad.xib in Resources */,
+				A84AD34E1416D39400D79893 /* QueryClassesTemplate.xml in Resources */,
+				A80109841416DC4600F540FC /* Yoga copy-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A899235813FC4FD8006F16EB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -430,6 +534,33 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A84AD32E1416D39400D79893 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A84AD32F1416D39400D79893 /* main.m in Sources */,
+				A84AD3301416D39400D79893 /* YogaAppDelegate.m in Sources */,
+				A84AD3311416D39400D79893 /* YogaAppDelegate_iPhone.m in Sources */,
+				A84AD3321416D39400D79893 /* YogaAppDelegate_iPad.m in Sources */,
+				A84AD3331416D39400D79893 /* MindBodyParser.m in Sources */,
+				A84AD3341416D39400D79893 /* NSDataAdditions.m in Sources */,
+				A84AD3351416D39400D79893 /* TBXML.m in Sources */,
+				A84AD3361416D39400D79893 /* Constants.m in Sources */,
+				A84AD3371416D39400D79893 /* ClassesController.m in Sources */,
+				A84AD3381416D39400D79893 /* ClassTableViewCell.m in Sources */,
+				A84AD3391416D39400D79893 /* ASIAuthenticationDialog.m in Sources */,
+				A84AD33A1416D39400D79893 /* ASIDataCompressor.m in Sources */,
+				A84AD33B1416D39400D79893 /* ASIDataDecompressor.m in Sources */,
+				A84AD33C1416D39400D79893 /* ASIDownloadCache.m in Sources */,
+				A84AD33D1416D39400D79893 /* ASIHTTPRequest.m in Sources */,
+				A84AD33E1416D39400D79893 /* ASIInputStream.m in Sources */,
+				A84AD33F1416D39400D79893 /* ASINetworkQueue.m in Sources */,
+				A84AD3401416D39400D79893 /* Reachability.m in Sources */,
+				A801097E1416D88200F540FC /* KIFTestScenario+YogaAdditions.m in Sources */,
+				A80109801416D88200F540FC /* YogaTestController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A899235613FC4FD8006F16EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -452,6 +583,8 @@
 				A8B33D4A13FE21CA003E6B58 /* ASIInputStream.m in Sources */,
 				A8B33D4B13FE21CA003E6B58 /* ASINetworkQueue.m in Sources */,
 				A8B33D4C13FE21CA003E6B58 /* Reachability.m in Sources */,
+				A801097D1416D88200F540FC /* KIFTestScenario+YogaAdditions.m in Sources */,
+				A801097F1416D88200F540FC /* YogaTestController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +646,54 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A84AD3501416D39400D79893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Yoga/Yoga-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"RUN_KIF_TESTS=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Frameworks/KIF/**",
+				);
+				INFOPLIST_FILE = "Yoga copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = YogaIntegationTests;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A84AD3511416D39400D79893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Yoga/Yoga-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"RUN_KIF_TESTS=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Frameworks/KIF/**",
+				);
+				INFOPLIST_FILE = "Yoga copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = YogaIntegationTests;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		A899239513FC4FD9006F16EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -629,6 +810,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A84AD34F1416D39400D79893 /* Build configuration list for PBXNativeTarget "YogaIntegrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A84AD3501416D39400D79893 /* Debug */,
+				A84AD3511416D39400D79893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A899235413FC4FD8006F16EB /* Build configuration list for PBXProject "Yoga" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -2,6 +2,10 @@
 
 #import "ClassesController.h"
 
+#if RUN_KIF_TESTS
+#import "YogaTestController.h"
+#endif
+
 @interface YogaAppDelegate : NSObject <UIApplicationDelegate> {
     UINavigationController *classesNavController;
 }
